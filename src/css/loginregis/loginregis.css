@@ -1,0 +1,109 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+body {
+  
+  display: flex;
+  
+}
+.wrapper {
+  width: 460px;
+  background: rgb(228, 228, 228);
+  border-radius: 10px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+}
+
+.wrapper.active .form {
+  transition: 2s ease-in-out;
+  left: -100%;
+}
+.wrapper.active .form-register {
+  left: 50%;
+  transition: 3s ease;
+}
+
+
+.wrapper .form {
+  transition: 0.5s ease;
+  left: 0;
+}
+.wrapper .form-register {
+  left: 150%;
+  transition: 3s ease;
+}
+
+
+.wrapper .form {
+  width: 460px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: 3s ease;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.input-box {
+  margin: 10px 0px;
+  width: auto;
+}
+
+.input-box input {
+  display: flex;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+}
+
+.buttons {
+  margin: 10px 0px;
+  width: auto;
+}
+
+.buttons button {
+  padding: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  display: inline-block;
+  color: white;
+  background-color: black;
+  border-color: transparent;
+}
+h4 {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+h4 a {
+  color: red;
+  text-decoration: none;
+}
+
+.form-register {
+  width: 460px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 150%;
+}

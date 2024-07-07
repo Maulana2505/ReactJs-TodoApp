@@ -1,0 +1,77 @@
+body {
+  margin: 0;
+}
+
+/* SideBar */
+.sidebar-container {
+  width: 10%;
+  padding: 20px;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+}
+
+.sidebar-container .images {
+  position: relative;
+  height: 50px;
+  display: block;
+  border-radius: 50%;
+}
+
+.buttons {
+  width: 100px;
+  align-content: end;
+  bottom: 15px;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+/* Todo List */
+
+.todo-container {
+  background: rgb(228, 228, 228);
+  margin-left: 10%;
+  border-radius: 50px 0px 0px 50px;
+  width: 90%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+}
+.inputbutton-container {
+  width: auto;
+}
+.inputs {
+  border: none;
+  width: 350px;
+  padding: 10px;
+}
+.inputbutton-container button {
+  border: none;
+  width: auto;
+  padding: 10px;
+}
+
+.todo-container .list-container {
+  width: 60%;
+  height: 100%;
+  overflow: scroll;
+}
+.list-data {
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  flex-direction:row;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+.list-data-children{
+  display: flex;
+}
